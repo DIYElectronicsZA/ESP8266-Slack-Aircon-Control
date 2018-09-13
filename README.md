@@ -18,4 +18,4 @@ To install all the libraries needed, select `Sketch -> Include Libraries -> Libr
 * WebSocketsClient
 * IRsend
 * IRremoteESP8266
-* ArduinoJson !!!IMPORTANT!!! When installing ArduinoJson, Make sure to install `version 5.13.2`, anything newer and the code will not work!
+* ArduinoJson [!!!IMPORTANT!!!] When installing ArduinoJson, Make sure to install `version 5.13.2`, anything newer and the code will not work!
