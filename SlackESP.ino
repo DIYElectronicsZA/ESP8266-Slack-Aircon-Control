@@ -12,7 +12,7 @@
 #include <ESP8266HTTPClient.h>
 #include <WebSocketsClient.h>
 #include <ArduinoJson.h>
-const char* myNum = "2";
+const char* myNum = "1";
 #define SLACK_SSL_FINGERPRINT "C1 0D 53 49 D2 3E E5 2B A2 61 D5 9E 6F 99 0D 3D FD 8B B2 B3"
 #define SLACK_BOT_TOKEN "xxxx" 
 #define WIFI_SSID       "xxxx"
@@ -134,7 +134,7 @@ void setup() {
   while (WiFiMulti.run() != WL_CONNECTED) {
     delay(100);
   }
-  ArduinoOTA.setHostname("AC_02_ESP");
+  ArduinoOTA.setHostname("AC_01_ESP");
   ArduinoOTA.onStart([]() {
     Serial.println("Start");
   });
