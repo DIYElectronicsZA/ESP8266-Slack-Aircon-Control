@@ -1,4 +1,7 @@
 # ESP8266 Slack AC Control, with OTA!
+
+![IMAGE](https://raw.githubusercontent.com/DIYElectronicsZA/ESP8266-Slack-Aircon-Control/master/Emitters.jpg)
+
 Utilizing an ESP8266 equipped with an IR blaster to control in-office AC units via Slack, (Specifically "AUX" model AC units). The Code features OTA "Over-the-Air" code uploads and multiple emitters.
 
 ## Getting Started
@@ -23,7 +26,6 @@ To install all the libraries needed, select `Sketch -> Include Libraries -> Libr
 Once all of the above is done, we can continue to the next section
 
 ## Modifying The Code
-
 The credentials you will need to insert into the code:
 * WiFi SSID
 * WiFi Passphrase
@@ -34,14 +36,12 @@ Copy and paste the code into a new sketch in the Arduino IDE, and replace 'xxxx'
 You can now flash the code to the ESP8266, to do this, select `Tools -> Board` and select your board, in our case, the **LOLIN(Wemos) DI R2 & Mini**, then in `Tools -> Port` select the COM port inwhich the ESP8266 or programmer is plugged into your PC via. Usually there is only one COM port to choose from, but if you have more, make sure there are not other usb serial devices plugged into your PC. Then in `Tools -> Upload Speed`, select 921600. You can now press the right arrow near the top left of the Arduino IDE to upload your code!
 
 ## Making the Physical Connections
-
 The Following connections need to be made:
 * **VCC of ESP8266** to **VCC of IR LED**
 * **GPIO 4 or D2 of ESP8266** to **Signal of IR LED**
 * **GND of ESP8266** to **GND of IR LED**
 
 ## Final Setup and Usage
-
 Now to give your ESP8266 to power, ensure the IR Blaster is pointing at your AC unit and open Slack!
 In Slack, Press the `+` next to **Direct Messages**, select the bot you made previously, and message it `1 on`.
 The device should emit an IR signal and turn on the AC!
