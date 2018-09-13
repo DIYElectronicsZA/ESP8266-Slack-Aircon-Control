@@ -1,6 +1,6 @@
 # ESP8266 Slack AC Control, with OTA!
 
-![IMAGE](https://raw.githubusercontent.com/DIYElectronicsZA/ESP8266-Slack-Aircon-Control/master/Emitters.jpg)
+![IMAGE](https://raw.githubusercontent.com/DIYElectronicsZA/ESP8266-Slack-Aircon-Control/master/Emitters2.jpg)
 
 Utilizing an ESP8266 equipped with an IR blaster to control in-office AC units via Slack, (Specifically "AUX" model AC units). The Code features OTA "Over-the-Air" code uploads and multiple emitters.
 
