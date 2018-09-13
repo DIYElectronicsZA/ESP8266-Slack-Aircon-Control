@@ -1,4 +1,4 @@
-# ESP8266 Slack Air-con Control
+# ESP8266 Slack AC Control, with OTA!
 Utilizing an ESP8266 equipped with an IR blaster to control in-office AC units.
 
 ## Getting Started
@@ -19,3 +19,14 @@ To install all the libraries needed, select `Sketch -> Include Libraries -> Libr
 * IRsend
 * IRremoteESP8266
 * ArduinoJson **!!!IMPORTANT!!!** When installing ArduinoJson, Make sure to install `version 5.13.2`, anything newer and the code will not work!
+
+Once all of the above is done, we can continue to the next section
+
+## Modifying The Code
+
+The credentials you will need to insert into the code:
+* WiFi SSID
+* WiFi Passphrase
+* Slack Bot Token, available [here](https://my.slack.com/services/new/bot)
+
+Copy and paste the code into a new sketch in the Arduino IDE, and replace 'xxxx' in `WIFI_SSID`, `WIFI_PASSWORD`, and `SLACK_BOT_TOKEN` with your correct credential.
