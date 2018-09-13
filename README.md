@@ -1,5 +1,5 @@
 # ESP8266 Slack AC Control, with OTA!
-Utilizing an ESP8266 equipped with an IR blaster to control in-office AC units.
+Utilizing an ESP8266 equipped with an IR blaster to control in-office AC units via Slack, (Specifically "AUX" model AC units). The Code features OTA "Over-the-Air" code uploads and multiple emitters.
 
 ## Getting Started
 You will need the following items in order to replicate this project:
@@ -46,3 +46,15 @@ Now to give your ESP8266 to power, ensure the IR Blaster is pointing at your AC 
 In Slack, Press the `+` next to **Direct Messages**, select the bot you made previously, and message it `1 on`.
 The device should emit an IR signal and turn on the AC!
 You can use the commands: `1 on, 1 On, 1 off, 1 Off`
+
+## Advanced (Multiple Emitters and OTA)
+### Multiple Emitters
+To use mulitple emitters, for multiple AC units, you can use the exact same code, only changing `const char* myNum = "1";` to `const char* myNum = "2";` and `ArduinoOTA.setHostname("AC_01_ESP");` to `ArduinoOTA.setHostname("AC_02_ESP");` on the new emitter. Now in slack you can specify `1 on` or `2 on` to turn either the first or second emitter on.
+
+### OTA (Over-The-Air Code Updates
+When an emitter is plugged into power (not from your PC), in Arduino IDE, select `Tools -> Port`, and you should see **AC_01_ESP** under 'Network ports'. Select this as the port and now you can upload code over the air! No need to connect the ESP8266 to your PC!
+
+## Contributions
+The following sources were used in the making of this code
+* [Urish's Arduino Slack Bot](https://github.com/urish/arduino-slack-bot/blob/master/slackbot/slackbot.ino)
+* [Arduino OTA](https://github.com/esp8266/Arduino/tree/master/libraries/ArduinoOTA)
