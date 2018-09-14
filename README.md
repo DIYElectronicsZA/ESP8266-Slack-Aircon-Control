@@ -31,7 +31,7 @@ The credentials you will need to insert into the code:
 * WiFi Passphrase
 * Slack Bot Token, available [here](https://my.slack.com/services/new/bot)
 
-Copy and paste the code into a new sketch in the Arduino IDE, and replace 'xxxx' in `WIFI_SSID`, `WIFI_PASSWORD`, and `SLACK_BOT_TOKEN` with your correct credential.
+Copy and paste the SlackESP.ino code into a new sketch in the Arduino IDE, and replace 'xxxx' in `WIFI_SSID`, `WIFI_PASSWORD`, and `SLACK_BOT_TOKEN` with your correct credential.
 
 You can now flash the code to the ESP8266, to do this, select `Tools -> Board` and select your board, in our case, the **LOLIN(Wemos) DI R2 & Mini**, then in `Tools -> Port` select the COM port inwhich the ESP8266 or programmer is plugged into your PC via. Usually there is only one COM port to choose from, but if you have more, make sure there are not other usb serial devices plugged into your PC. Then in `Tools -> Upload Speed`, select 921600. You can now press the right arrow near the top left of the Arduino IDE to upload your code!
 
